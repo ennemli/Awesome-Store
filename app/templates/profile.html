@@ -1,0 +1,24 @@
+{%extends 'bases/base.html'%}
+{%block page_title%}
+<title>{{user.username}} |Awesom Store</title>
+{%endblock%}
+{%block main_content%}
+<div class="container-fluid mt-4">
+    <div class="row row-cols-1 gap-2 justify-content-md-center">
+        <div class="col-auto">
+            <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="#" >My Informations</a></li>
+                <li class="breadcrumb-item"><a href="#">My Wish List</a></li>
+                <li class="breadcrumb-item"><a href="#">My Shopping List</a></li>
+            </ol>
+            </nav>
+            <hr>
+            <div class="col">
+                {% include "components/myinformations.html" %}
+            </div>
+        </div>
+    </div>    
+</div>
+{%endblock%}

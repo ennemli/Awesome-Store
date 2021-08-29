@@ -1,0 +1,14 @@
+
+{%extends "bases/base.html" %}
+
+{%block page_title%}
+<title>Awesome Store</title>
+{%endblock%}
+
+{% block navbar %}
+{% include "components/shopping_navbar.html" %}
+{% endblock %}
+
+{% block main_content %}
+{% include "components/explore.html" %}
+{% endblock %}

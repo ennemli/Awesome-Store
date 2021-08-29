@@ -1,0 +1,11 @@
+{% load asmstore %}
+{%myinfos as infos%}
+<ol class="infos">
+    {% for info_name,info_value in infos %}
+    <li class="info-item">
+        {{info_name|remove_dunder}}: <span>{{info_value}} <a href="" class="ms-2"><i class="fas fa-edit"></i></a></span>
+    </li>  
+    {% endfor %}
+    
+
+</ol>
